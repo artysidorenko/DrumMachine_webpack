@@ -1,0 +1,23 @@
+.key__container {
+  place-self: center;
+}
+
+.key__button {
+  cursor: pointer;
+  background-color: grey;
+  color: black;
+  font-weight: bold;
+  font-size: large;
+  width: 100px;
+  height: 50px;
+  border-top: 2px inset rgb(100, 98, 111);
+  border-right: 6px inset rgb(165, 161, 172);
+  border-bottom: 6px inset rgb(165, 161, 172);
+  border-left: 2px inset rgb(100, 98, 111);
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.key__button--lit {
+  background-color: rgb(202, 214, 103);
+}

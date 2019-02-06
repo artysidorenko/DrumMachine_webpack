@@ -1,0 +1,36 @@
+.machine__container {
+  background-color: rgb(198, 182, 147);
+  margin: auto;
+  margin-top: 20px;
+  border-top: 5px inset grey;
+  border-right: 10px inset grey;
+  border-bottom: 10px inset grey;
+  border-left: 7px inset grey;
+  border-radius: 10px;
+  padding: 10px;
+  width: 550px;
+  height: 420px;
+
+  display: grid;
+  grid-template-columns: 420px 100px;
+  grid-template-rows: 100px 100px 100px 100px;
+}
+
+.machine__keypad {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  width: 400px;
+  padding: 10px;
+}
+
+.machine__header {
+  font-family: monospace;
+  font-style: italic;
+  border: 1px solid brown;
+  padding: 4px;
+  height: 60px;
+  border-radius: 4px;
+}

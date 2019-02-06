@@ -1,0 +1,16 @@
+.screen__container {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-color: rgb(56, 61, 51);
+  width: 350px;
+  height: 50px;
+  margin-left: 35px;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+.screen__output {
+  text-align: center;
+  color: rgb(193, 227, 161);
+  font-weight: bold;
+}

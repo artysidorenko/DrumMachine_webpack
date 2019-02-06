@@ -1,0 +1,20 @@
+.mode__container {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.reset__container {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.mode__button, .reset__button {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: large;
+    width: 75px;
+    height: 50px;
+    border: 5px ridge black;
+    box-shadow: 3px 3px grey;
+    cursor: pointer;
+}
