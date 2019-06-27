@@ -2,17 +2,16 @@ import React from 'react';
 import '../../public/styles/key.css';
 
 class Key extends React.Component {
-  state = {
-    lightup: false,
-    looping: false,
-    loopID: null
-  };
-  // stopLoop = () => {
-  //   if (this.state.looping) clearInterval();
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      lightup: false,
+      looping: false,
+      loopID: null
+    };
+  }
   playKey = () => {
-    const audio = new Audio(this.props.sound);
-    audio.type = 'audio/wav';
+    const audio = this.props.sound
     // if key is already looping, then pressing again should stop the loop (assigned to the key's loopID state)
     if (this.state.looping) {
       clearInterval(this.state.loopID)
@@ -63,8 +62,7 @@ class Key extends React.Component {
     // not sure if this is the best way to change the interval on bpm change?
     if (this.props.bpm !== prevProps.bpm && this.state.looping) {
       clearInterval(this.state.loopID);
-      const audio = new Audio(this.props.sound);
-      audio.type = 'audio/wav';
+      const audio = this.props.sound
       this.setState({loopID: setInterval(function(){
         audio.play()
       }, 60000/this.props.bpm)})

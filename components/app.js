@@ -53,15 +53,15 @@ export default class App extends React.Component {
       <Reset action={this.reset}/>
       <div className='machine__keypad'>
 
-        <Key letter="Q" sound={clapCrushed} onScreen={this.activateDisplay} name='clapCrushed' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
-        <Key letter="W" sound={clapTape} onScreen={this.activateDisplay} name='clapTape' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
-        <Key letter="E" sound={cowbell808} onScreen={this.activateDisplay} name='cowbell808' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
-        <Key letter="A" sound={hihat808} onScreen={this.activateDisplay} name='hihat808' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
-        <Key letter="S" sound={hihatAcoustic} onScreen={this.activateDisplay} name='hihatAcoustic' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
-        <Key letter="D" sound={kickAcoustic} onScreen={this.activateDisplay} name='kickAcoustic' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
-        <Key letter="Z" sound={kickDry} onScreen={this.activateDisplay} name='kickDry' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
-        <Key letter="X" sound={percMetal} onScreen={this.activateDisplay} name='percMetal' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
-        <Key letter="C" sound={tomAcoustic} onScreen={this.activateDisplay} name='tomAcoustic' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
+        <Key letter="Q" sound={new Audio(clapCrushed)} onScreen={this.activateDisplay} name='clapCrushed' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
+        <Key letter="W" sound={new Audio(clapTape)} onScreen={this.activateDisplay} name='clapTape' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
+        <Key letter="E" sound={new Audio(cowbell808)} onScreen={this.activateDisplay} name='cowbell808' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
+        <Key letter="A" sound={new Audio(hihat808)} onScreen={this.activateDisplay} name='hihat808' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
+        <Key letter="S" sound={new Audio(hihatAcoustic)} onScreen={this.activateDisplay} name='hihatAcoustic' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
+        <Key letter="D" sound={new Audio(kickAcoustic)} onScreen={this.activateDisplay} name='kickAcoustic' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
+        <Key letter="Z" sound={new Audio(kickDry)} onScreen={this.activateDisplay} name='kickDry' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
+        <Key letter="X" sound={new Audio(percMetal)} onScreen={this.activateDisplay} name='percMetal' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
+        <Key letter="C" sound={new Audio(tomAcoustic)} onScreen={this.activateDisplay} name='tomAcoustic' loop={this.state.loop} bpm={this.state.bpm} clear={this.state.clear} undoReset={this.undoReset} className='drum-pad'/>
 
       </div>
       <Tempo action={this.setTempo}/>
